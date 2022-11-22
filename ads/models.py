@@ -1,8 +1,8 @@
 from django.core.validators import MinLengthValidator, MaxLengthValidator
 from django.db import models
 
-from ads.validators import not_published
-from user.models import User
+
+from HW_31.user.models import User
 
 
 class Category(models.Model):

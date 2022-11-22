@@ -2,7 +2,7 @@ import datetime
 
 import factory
 
-from ads.models import Category, Ad
+from HW_31.ads.models import Category, Ad
 from user.models import User
 
 
@@ -25,6 +25,6 @@ class AdFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Ad
     name = factory.Faker('name')
-    category = factory.SubFaker(CategoryFactory)
+    category = factory.SubFactory(CategoryFactory)
     author = factory.SubFactory(UserFactory)
     price = 6666
