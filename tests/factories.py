@@ -2,7 +2,7 @@ import datetime
 
 import factory
 
-from HW_31.ads.models import Category, Ad
+from ads.models import Category, Ad
 from user.models import User
 
 

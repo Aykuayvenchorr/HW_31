@@ -2,7 +2,7 @@ from django.core.validators import MinLengthValidator, MaxLengthValidator
 from django.db import models
 
 
-from HW_31.user.models import User
+from user.models import User
 
 
 class Category(models.Model):
