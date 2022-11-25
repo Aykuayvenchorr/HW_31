@@ -3,13 +3,13 @@ from rest_framework.viewsets import ModelViewSet
 
 from ads.models import Selection
 from ads.permissions import IsOwnerSelection
-from ads.serializers import SelectionListSerializer, SelectionDetailSerializer
+from ads.serializers import SelectionListSerializer, SelectionDetailSerializer, SelectionSerializer
 
 
 class SelectionViewSet(ModelViewSet):
     queryset = Selection.objects.all()
 
-    default_serializer = SelectionDetailSerializer
+    default_serializer = SelectionSerializer
     serializer_classes = {
         'list': SelectionListSerializer,
         'retrieve': SelectionDetailSerializer
